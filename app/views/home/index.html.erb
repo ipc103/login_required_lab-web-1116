@@ -1,0 +1,7 @@
+<h1>Home</h1>
+
+<p><%= current_user %></p>
+
+<%= form_tag(logout_path, method: 'DELETE') do %>
+  <%= submit_tag "Logout" %>
+<% end %>
